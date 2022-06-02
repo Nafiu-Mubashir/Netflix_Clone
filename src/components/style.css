@@ -1,6 +1,6 @@
 #image{
     max-width: 100% !important;
-    height: 90vh;
+    height: 80vh;
 }
 .card{
     width: 15% !important;
@@ -10,16 +10,44 @@
 }
 .card-img-top{
     width: auto;
-    height: 200px !important;
+    /* height: 0px !important; */
 }
 .card p{
     font-size: 10px;
-    display: none;
+    /* display: none; */
 }
-.card:hover,.card p:hover{
+.card:hover{
     /* transform-origin: top, left; */
-    transform: scale(2);
-    z-index: 2;
-    font-size: 10px;
-    display: block;
+    transform: scale(1.5);
+    z-index: 1;
+}
+.fa-magnifying-glass, .fa-bell{
+    margin-top: 12px;
+    font-size: 13;
+}
+.fa-circle-play{
+    color: white !important;
+}
+.nav-link:hover, .fa-magnifying-glass:hover, .fa-bell:hover{
+    color: #C7C8C9 !important;
+}
+@media (max-width: 700px) {
+    .container-fluid{
+        padding: 1em !important;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .card{
+        width: 100% !important;
+        height: 50% !important;
+        margin: 0px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    .card:hover{
+        /* transform-origin: top, left; */
+        transform: scale(1);
+        /* z-index: 0; */
+    }
 }
